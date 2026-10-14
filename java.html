@@ -1,0 +1,74 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Campus Quest</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<div class="container">
+
+    <header>
+        <div class="logo">
+            <span class="Target1">🎯</span>
+            <div>
+                <h1>Campus Quest</h1>
+                <h2>Mission Tracker</h2>
+                <p>Small steps. Big goals!</p>
+            </div>
+        </div>
+        <button class="colour-btn" onclick="changeColour()">
+            🎨 Change Colour
+        </button>
+    </header>
+
+    <div class="add-box">
+        <input type="text" id="missionInput"
+               placeholder="Enter a mission...">
+        <button class="add-btn" onclick="addMission()">
+            + Add Mission
+        </button>
+    </div>
+
+    <div class="summary">
+        <div class="card total">
+            <span class="symbol">☷</span>
+            <div>
+                <h3>Total Missions</h3>
+                <h2 id="totalCount">5</h2>
+            </div>
+        </div>
+
+        <div class="card completed">
+            <span class="symbol">✓</span>
+            <div>
+                <h3>Completed Missions</h3>
+                <h2 id="completedCount">2</h2>
+            </div>
+        </div>
+
+        <div class="card pending">
+            <span class="symbol">◷</span>
+            <div>
+                <h3>Pending Missions</h3>
+                <h2 id="pendingCount">3</h2>
+            </div>
+        </div>
+    </div>
+
+    <h2 class="mission-title">☷ My Missions</h2>
+
+    <div class="mission-list" id="missionList"></div>
+
+    <div class="message">
+        🎉 Keep going! You're doing great!
+    </div>
+
+</div>
+
+<script src="java.js"></script>
+</body>
+</html>
